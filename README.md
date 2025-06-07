@@ -8,13 +8,13 @@
 
 ## Clone the repository
 ```
-fgfghh
+https://github.com/19seniman/EcoSapien-auto-image.git
 ```
 ```
-cd
+cd EcoSapien-auto-image
 ```
 ```
-npm install
+npm install canvas@latest
 ```
 ```
 nano .env
