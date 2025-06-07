@@ -4,6 +4,7 @@
 
 ## Prerequisites
 ~ Node.js (v14 or higher)
+
 ~ npm or yarn 
 
 ## Clone the repository
