@@ -9,7 +9,7 @@
 
 ## Clone the repository
 ```
-https://github.com/19seniman/EcoSapien-auto-image.git
+git clone https://github.com/19seniman/EcoSapien-auto-image.git
 ```
 ```
 cd EcoSapien-auto-image
