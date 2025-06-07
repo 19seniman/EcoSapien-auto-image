@@ -7,6 +7,9 @@
 
 ~ npm or yarn 
 
+## Register account
+here: https://prod.ecosapiens.xyz/mobile/login/register/?referral_code=MFZRXPZC
+
 ## Clone the repository
 ```
 git clone https://github.com/19seniman/EcoSapien-auto-image.git
