@@ -21,11 +21,13 @@ const logger = {
   success: (msg) => console.log(`${colors.green}[✅] ${msg}${colors.reset}`),
   loading: (msg) => console.log(`${colors.cyan}[⟳] ${msg}${colors.reset}`),
   step: (msg) => console.log(`${colors.white}[➤] ${msg}${colors.reset}`),
+  countdown: (msg) => process.stdout.write(`\r${colors.blue}[⏰] ${msg}${colors.reset}`),
   banner: () => {
-    console.log(`${colors.cyan}${colors.bold}`);
-    console.log(`-------------------------------------------------`);
-    console.log(`   🍉19Seniman From Insider -FREE PALESTINE🍉`);
-    console.log(`-------------------------------------------------${colors.reset}`);
+    const { cyan, magenta, reset } = colors;
+    console.log(magenta + '=============================================' + reset);
+    console.log(cyan + '  🍉🍉PLEASE SUPPORT PALESTINE ON SOCIAL MEDIA 🍉🍉 ' + reset);
+    console.log(cyan + '       19Senniman from Insider' + reset);
+    console.log(magenta + '=============================================' + reset);
     console.log();
   }
 };
