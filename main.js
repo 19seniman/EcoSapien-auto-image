@@ -5,13 +5,14 @@ const { createCanvas } = require('canvas');
 require('dotenv').config();
 
 const colors = {
-  reset: '\x1b[0m',
-  red: '\x1b[31m',
-  green: '\x1b[32m',
-  yellow: '\x1b[33m',
-  cyan: '\x1b[36m',
-  white: '\x1b[37m',
-  bold: '\x1b[1m'
+  green: chalk.green,
+  yellow: chalk.yellow,
+  red: chalk.red,
+  cyan: chalk.cyan,
+  magenta: chalk.magenta,
+  white: chalk.white,
+  blue: chalk.blue,
+  reset: chalk.reset,
 };
 
 const logger = {
@@ -23,11 +24,10 @@ const logger = {
   step: (msg) => console.log(`${colors.white}[➤] ${msg}${colors.reset}`),
   countdown: (msg) => process.stdout.write(`\r${colors.blue}[⏰] ${msg}${colors.reset}`),
   banner: () => {
-    const { cyan, magenta, reset } = colors;
-    console.log(magenta + '=============================================' + reset);
-    console.log(cyan + '  🍉🍉PLEASE SUPPORT PALESTINE ON SOCIAL MEDIA 🍉🍉 ' + reset);
-    console.log(cyan + '       19Senniman from Insider' + reset);
-    console.log(magenta + '=============================================' + reset);
+    console.log(colors.magenta + '=============================================' + colors.reset);
+    console.log(colors.cyan + '  🍉🍉PLEASE SUPPORT PALESTINE ON SOCIAL MEDIA 🍉🍉 ' + colors.reset);
+    console.log(colors.cyan + '       19Senniman from Insider' + colors.reset);
+    console.log(colors.magenta + '=============================================' + colors.reset);
     console.log();
   }
 };
