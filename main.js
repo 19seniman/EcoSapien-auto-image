@@ -24,10 +24,10 @@ const logger = {
   countdown: (msg) => process.stdout.write(`\r${colors.blue}[⏰] ${msg}${colors.reset}`),
   banner: () => {
     const { cyan, magenta, reset } = colors;
-    console.log(magenta + '=============================================' + reset);
+    console.log(magenta  '=============================================' + reset);
     console.log(cyan + '  🍉🍉PLEASE SUPPORT PALESTINE ON SOCIAL MEDIA 🍉🍉 ' + reset);
     console.log(cyan + '       19Senniman from Insider' + reset);
-    console.log(magenta + '=============================================' + reset);
+    console.log(magenta '=============================================' + reset);
     console.log();
   }
 };
