@@ -3,17 +3,15 @@ const FormData = require('form-data');
 const readline = require('readline');
 const { createCanvas } = require('canvas');
 require('dotenv').config();
-const chalk = require('chalk');
 
 const colors = {
-  green: chalk.green,
-  yellow: chalk.yellow,
-  red: chalk.red,
-  cyan: chalk.cyan,
-  magenta: chalk.magenta,
-  white: chalk.white,
-  blue: chalk.blue,
-  reset: chalk.reset,
+  reset: '\x1b[0m',
+  red: '\x1b[31m',
+  green: '\x1b[32m',
+  yellow: '\x1b[33m',
+  cyan: '\x1b[36m',
+  white: '\x1b[37m',
+  bold: '\x1b[1m'
 };
 
 const logger = {
