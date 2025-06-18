@@ -3,7 +3,6 @@ const FormData = require('form-data');
 const readline = require('readline');
 const { createCanvas } = require('canvas');
 require('dotenv').config();
-
 const chalk = require('chalk');
 
 const colors = {
